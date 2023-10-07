@@ -5,7 +5,7 @@ windowBtn.addEventListener("click",()=>{
     gsap.to(".start-box",{
         top:"50%",
         ease: "power4.out",
-        duration:0.4
+        duration:0.6
     })
     clicked=true
 })
