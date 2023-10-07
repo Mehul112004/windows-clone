@@ -1,0 +1,334 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+.main{
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.status-bar{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.21);
+    -webkit-backdrop-filter:blur(45px);
+    -moz-backdrop-filter:blur(45px);
+    backdrop-filter: blur(45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 0.7px white;
+}
+.image-container{
+    
+    height: 80%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.2s all
+}
+.image{
+    width: 45px;
+}
+.search-bar{
+    width: 230px;
+    height: 62%;
+    background-color:rgba(255, 255, 255, 0.290);
+    box-shadow: 0 1 0.7px white;
+    -webkit-backdrop-filter:blur(20px);
+    -moz-backdrop-filter:blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius:100px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s all;
+    box-shadow: 0 0 0.7px white;
+}
+.search-bar>svg{
+    margin-left: 8px;;
+    height: 70%;
+}
+.search-bar>svg path{
+    fill: white;
+}
+.search-bar>p{
+    font-size: 16px;
+    color: #e9e3e3;
+    font-weight: 300;
+}
+.search-bar:hover{
+    background-color:rgba(255, 255, 255, 0.332);
+    cursor: text;
+}
+.search-bar:active{
+    background-color: transparent;
+}
+.pilot{
+    width: 30px;
+}
+.task-view{
+    width: 30px;
+}
+.store{
+    width: 30px;
+}
+.file{
+    width: 30px;
+}
+.phone-link{
+    width: 35px;
+}
+.chrome{
+    width: 35px;
+}
+.spotify{
+    width: 30px;
+}
+.whatsapp{
+    width: 30px;
+}
+.image-container:hover{
+    background-color: rgba(255, 255, 255, 0.104);
+    border-radius: 3px;
+}
+.image-container:active{
+    transform:scale(0.80)
+}
+
+
+
+
+
+
+.start-box{
+    width: 42%;
+    height: 88%;
+    background-color:rgba(43,43,43,255);
+    margin-bottom: 30px;
+    border-radius: 12px;
+    -webkit-backdrop-filter:blur(45px);
+    -moz-backdrop-filter:blur(45px);
+    backdrop-filter: blur(45px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+}
+.start-box>.search{
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.301);
+    -webkit-backdrop-filter:blur(45px);
+    -moz-backdrop-filter:blur(45px);
+    backdrop-filter: blur(45px);
+    border-radius: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.start-box>.search>svg{
+    margin-left: 12px;;
+    height: 70%;
+}
+.start-box>.search>svg path{
+    fill: white;
+}
+.start-box>.search>p{
+    font-size: 16px;
+    color: #e9e3e398;
+    font-weight: 300;
+}
+.middle-text{
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+.middle-text>h1{
+    font-size:16px
+}
+.middle-text>div{
+    font-size: 12px;
+    display: flex;
+    height: 25px;
+    width: 95px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.145);
+}
+.middle-text>div>svg{
+    height: 20px;
+    position: relative;
+    top: 2.5px;
+}
+.image{
+    width: 35px;
+}
+.apps{
+    /* padding: 0 50px; */
+    /* background-color: white; */
+    width: 88%;
+    display: grid;
+    /* padding: 0 5px; */
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 95px  95px 95px;
+    gap: 1px;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    transition: 0.1s;
+}
+figure:hover{
+    background-color: #ffffff32;
+    border-radius: 4px;
+    cursor: pointer;
+}
+figure>p{
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+}
+.figma,.excel,.ppt{
+    width: 65px;
+}
+.mail{
+    width: 60px;
+}
+.clipchamp{
+    width: 45px;
+}
+.bottom-text{
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+.bottom-text>h1{
+    font-size:16px
+}
+.bottom-text>div{
+    font-size: 12px;
+    display: flex;
+    height: 25px;
+    width: 65px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.145);
+}
+.bottom-text>div>svg{
+    height: 20px;
+    position: relative;
+    top: 2.5px;
+}
+.recommended{
+    margin-top: 20px;
+    width: 88%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    gap: 20px;
+}
+.recommended>div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
+    color: white;
+    transition: 0.1s;
+}
+.recommended>div:hover{
+    background-color: #ffffff40;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.recommended>div>img{
+    width: 50px;
+}
+.footer{
+    margin-top: 30px;
+    width: 88%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fff; */
+}
+.footer>.account{
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    padding:5px 0;
+}
+.footer>.account>div{
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* display: flex; */
+    border: 1px solid white;
+}
+.footer>.account>div>img{
+    width: 40px;
+    height: 40px;
+}
+.footer>svg{
+    width: 30px;
+}
+.footer>svg:hover{
+    cursor: pointer;
+}
+.account:hover{
+    background-color: #ffffff40;
+    border-radius: 5px;
+    cursor: pointer;
+}
