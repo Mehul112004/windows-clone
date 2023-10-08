@@ -1,7 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
-
+/* sdjfkjdsfjk */
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +16,15 @@ html,body{
     flex-direction: column;
     align-items: center; */
 }
+
+.trans{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+}
+
 .main{
     height: 100vh;
     background-image: url(images/bg.jpg);
