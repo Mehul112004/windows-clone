@@ -1,21 +1,29 @@
 let windowBtn=document.querySelector(".window-button");
-let trans=document.querySelector(".trans");
+// let trans=document.querySelector(".trans");
 // let clicked=false
-windowBtn.addEventListener("click",()=>{
+windowBtn.addEventListener("click",(e)=>{
     gsap.to(".start-box",{
         top:"50%",
         ease: "power4.out",
         duration:0.3,
         zIndex:"11"
     })
-    clicked=true
+    e.stopPropagation();
 })
-trans.addEventListener("click",()=>{
+// trans.addEventListener("click",()=>{
+//     gsap.to(".start-box",{
+//         top:"150%",
+//         ease:"power4.out",
+//         duration:0.3
+//     })
+// })
+window.addEventListener("click",(e)=>{
     gsap.to(".start-box",{
         top:"150%",
         ease:"power4.out",
         duration:0.3
     })
+    
 })
 // function remove(){
 //     gsap.to(".start-box",{
