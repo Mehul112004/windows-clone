@@ -1,7 +1,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
-/* sdjfkjdsfjk */
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +10,6 @@
 html,body{
     height: 100%;
     overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; */
 }
 
 /* .trans{
@@ -85,7 +80,6 @@ html,body{
 .right-most{
     width: 200px;
     height: 100%;
-    /* background-color: red; */
 }
 .image-container{
     height: 80%;
@@ -180,7 +174,6 @@ html,body{
     left: 50%;
     top: 150%;
     transform: translate(-50%,-50%);
-    /* display: none; */
 }
 .start-box>.search{
     margin-top: 20px;
@@ -241,11 +234,8 @@ html,body{
     width: 35px;
 }
 .apps{
-    /* padding: 0 50px; */
-    /* background-color: white; */
     width: 88%;
     display: grid;
-    /* padding: 0 5px; */
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 95px  95px 95px;
     gap: 1px;
@@ -255,13 +245,11 @@ figure{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
     transition: 0.1s;
 }
 figure:hover{
     background-color: #ffffff32;
     border-radius: 4px;
-    /* cursor: pointer; */
 }
 figure>p{
     width: 100%;
@@ -339,7 +327,6 @@ figure>p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #fff; */
 }
 .footer>.account{
     width: 200px;
@@ -356,7 +343,6 @@ figure>p{
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    /* display: flex; */
     border: 1px solid white;
 }
 .footer>.account>div>img{
