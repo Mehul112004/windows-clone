@@ -17,13 +17,13 @@ html,body{
     align-items: center; */
 }
 
-.trans{
+/* .trans{
     width: 100%;
     height: calc(100vh - 50px);
     background-color: transparent;
     position: absolute;
     z-index: 10;
-}
+} */
 
 .main{
     height: 100vh;
@@ -35,6 +35,7 @@ html,body{
     position: relative;
 }
 .status-bar{
+    padding: 0 10px;
     width: 100%;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.21);
@@ -42,13 +43,51 @@ html,body{
     -moz-backdrop-filter:blur(45px);
     backdrop-filter: blur(45px);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 0.7px white;
+}
+.widgets{
+    width: 120px;
+    height: 90%;
+    padding: 4px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.widgets .sun-cloud{
+    height: 25px;
+}
+.widgets .location{
+    width: 50px;
+    color: #ffffff;
+}
+.widgets .location h3{
+    font-size: 14px;
+}
+.widgets .location h4{
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.944);
+}
+.widgets:hover{
+    background-color: rgba(255, 255, 255, 0.104);
+    cursor: default;
+}
+.apps-middle{
+    height: 100%;
+    width: 60%;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 0 0.7px white;
+}
+.right-most{
+    width: 200px;
+    height: 100%;
+    /* background-color: red; */
 }
 .image-container{
-    
     height: 80%;
     width: 40px;
     display: flex;
@@ -103,19 +142,13 @@ html,body{
     width: 30px;
 }
 .file{
-    width: 30px;
+    width: 20px;
 }
 .phone-link{
     width: 35px;
 }
 .chrome{
     width: 35px;
-}
-.spotify{
-    width: 30px;
-}
-.whatsapp{
-    width: 30px;
 }
 .image-container:hover{
     background-color: rgba(255, 255, 255, 0.104);
@@ -228,7 +261,7 @@ figure{
 figure:hover{
     background-color: #ffffff32;
     border-radius: 4px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 figure>p{
     width: 100%;

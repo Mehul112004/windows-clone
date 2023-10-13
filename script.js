@@ -1,6 +1,4 @@
 let windowBtn=document.querySelector(".window-button");
-// let trans=document.querySelector(".trans");
-// let clicked=false
 windowBtn.addEventListener("click",(e)=>{
     gsap.to(".start-box",{
         top:"50%",
@@ -10,13 +8,6 @@ windowBtn.addEventListener("click",(e)=>{
     })
     e.stopPropagation();
 })
-// trans.addEventListener("click",()=>{
-//     gsap.to(".start-box",{
-//         top:"150%",
-//         ease:"power4.out",
-//         duration:0.3
-//     })
-// })
 window.addEventListener("click",(e)=>{
     gsap.to(".start-box",{
         top:"150%",
@@ -25,17 +16,15 @@ window.addEventListener("click",(e)=>{
     })
     
 })
-// function remove(){
-//     gsap.to(".start-box",{
-//         top:"150%",
-//         duration:0.5
-//     })
-//     clicked=flase
-// }
-// rest.addEventListener("click",()=>{
-//     if(clicked===true)
-//     remove();
-// else
-// return
-    
-// })
+//Another way to implement the start menu functionality
+//by creating a transparent div with height =fullHeight - statusBarHeight
+/*let trans=document.querySelector(".trans");
+let clicked=false
+    trans.addEventListener("click",()=>{
+        gsap.to(".start-box",{
+            top:"150%",
+            ease:"power4.out",
+            duration:0.3
+        })
+    })
+*/
