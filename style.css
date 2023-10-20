@@ -80,6 +80,21 @@ html,body{
 .right-most{
     width: 200px;
     height: 100%;
+    color: white;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-most .time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.right-most .time p{
+    font-size: 13px;
+    font-weight: 300;
 }
 .image-container{
     height: 80%;
@@ -151,7 +166,6 @@ html,body{
 .image-container:active{
     transform:scale(0.80)
 }
-
 
 
 
